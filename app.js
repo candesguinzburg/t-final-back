@@ -7,7 +7,7 @@ const usersRouter = require('./routes/usersRouter')
 const comentRouter = require('./routes/comentRouter')
 const hbs = require('hbs')
 
-PORT = process.env.PORT || 9000
+PORT = process.env.PORT || 8000
 const app = express()
 require('./models/conexion')
 
@@ -51,8 +51,8 @@ app.use(function(err, req, res, next) {
 res.render('*')
 })
 
-app.listen(PORT, () => {
-  console.log(`El servidor se está escuchando en http://localhost:${PORT}`);
+app.listen(8000, () => {
+  console.log(`El servidor se está escuchando en http://localhost:8000`);
 });
 
 module.exports = app
