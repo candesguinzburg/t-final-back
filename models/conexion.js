@@ -5,7 +5,7 @@ dotenv.config()
 
 const dbName =  process.env.DB_NAME
 const password =  process.env.PASSWORD
-const CONNECTION_URL =`mongodb+srv://cande2003:${password}@cluster0.wlqaceu.mongodb.net/${dbName}`
+const CONNECTION_URL =`mongodb+srv://cande2003:opCi1dI73Qe3UZ9C@cluster0.wlqaceu.mongodb.net/BienestarSport?retryWrites=true&w=majority`
 
 
 mongoose.connect(CONNECTION_URL,
